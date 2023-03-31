@@ -13,8 +13,6 @@ function App() {
 
   // let [time, setTime]=useState();
 
-  //2
-  
 
   //3
   // function clock(time){
@@ -78,9 +76,6 @@ function App() {
       {/* <h2>난수생성</h2>
       <button onClick={()=>{refreshPage()}}>생성</button>
       <p>{a}</p> */}
-
-      <h2>가위바위보</h2>
-
 
 
       {/* <h2>시분초 출력</h2>

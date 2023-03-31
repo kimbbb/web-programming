@@ -38,6 +38,9 @@ function App() {
   };
 
   const handleClearClick = () => {
+    win=[]
+    lose=[]
+    non=[]
     setOtherHand('rock');
     setHand('rock');
   };
