@@ -13,6 +13,9 @@ function App() {
 
   // let [time, setTime]=useState();
 
+  //2
+  
+
   //3
   // function clock(time){
   //   let hour = Math.round(time/3600)

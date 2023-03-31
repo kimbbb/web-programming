@@ -11,6 +11,7 @@ import Count from './0323/CounterUse'
 import EventPractice from './0323/EventPractice';
 import Click from './0323/Click';
 import ClickClass from './0323/ClickClass';
+import Rock from '../src/rock/App.js'
 
 // setInterval(() => {
 //   const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -29,14 +30,14 @@ root.render(
   <React.StrictMode>
     {/* <Library /> */}
     {/* <Clock/> */}
-    <App/>
+    {/* <App/> */}
     {/* <CommentList/> */}
     {/* <Login/> */}
     {/* <Count/> */}
     {/* <EventPractice/> */}
     {/* <Click/> */}
     {/* <ClickClass/> */}
-    {/* <Rock/> */}
+    <Rock/>
   </React.StrictMode>
 );
 
