@@ -30,9 +30,9 @@ root.render(
   <React.StrictMode>
     {/* <Library /> */}
     {/* <Clock/> */}
-    <App/>
+    {/* <App/> */}
     {/* <CommentList/> */}
-    {/* <Login/> */}
+    <Login/>
     {/* <Count/> */}
     {/* <EventPractice/> */}
     {/* <Click/> */}
