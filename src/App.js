@@ -37,39 +37,39 @@ function App() {
   // } 
 
   //5
-  // let [arr, setArr]=useState([]);
-  // let [array, setArray]=useState();
-  // let [aa, setAa]=useState([]);
-  // let [bb, setBb]=useState([]);
-  // function math(arr) {
-  //   for(let i=0; i<10; i++){
-  //     if (arr[i]%2!=0){
-  //       aa.push(arr[i])
-  //     }
-  //   }
+  let [arr, setArr]=useState()
+  let alist=[]
+  let blist=[]
 
-  //   for(let i=0; i<10; i++){
-  //     if (arr[i]%2==0){
-  //       bb.push(arr[i])
-  //     }
-  //   }
+  function math(){
+    let array=arr.split(' ')
+    array.forEach((a) => {
+      if(a%2==0){
+        alist.push(a)
+      }else{
+        blist.push(a)
+      }
+    });
 
-  //   $('#aaa').append(`<p>${aa}</p>`)
-  //   $('#bbb').append(`<p>${bb}</p>`)
-  // }
+    console.log(alist, blist)
+    $('#aaa').append(`<p>${alist}</p>`)
+    $('#bbb').append(`<p>${blist}</p>`)
+  }
 
   //6
-  // let [list, setList]=useState([]);
-  // let [number, setNumber]=useState();
-  // function math(list) {
-  //   let listdown = [...list];
-  //   list.sort((a,b)=>a-b);
-  //   listdown.sort((a,b)=>b-a)
+  // let [arr, setArr]=useState();
+
+  // function math() {
+  //   let list = arr.split(' ')
+  //   console.log(list)
+  //   let down = [...list]
+  //   list.sort((a,b)=>a-b)
+  //   down.sort((a,b)=>b-a)
 
   //   $('#up').append(`<p>${list}</p>`)
-  //   $('#down').append(`<p>${listdown}</p>`)
-  // }
+  //   $('#down').append(`<p>${down}</p>`)
 
+  // }
 
   return(
     <>
@@ -90,44 +90,20 @@ function App() {
       <button onClick={()=>{gugu(one, two)}}>입력</button>
       <div id='text'></div> */}
 
-      {/* <h2>홀짝출력</h2>
-      <div className='input'>
-        <input onChange={(e)=>{setArray(e.target.value)}}/>
-        <input onClick={()=>{arr.push(array)}} onChange={(e)=>{setArray(e.target.value)}}/>
-        <input onClick={()=>{arr.push(array)}} onChange={(e)=>{setArray(e.target.value)}}/>
-        <input onClick={()=>{arr.push(array)}} onChange={(e)=>{setArray(e.target.value)}}/>
-        <input onClick={()=>{arr.push(array)}} onChange={(e)=>{setArray(e.target.value)}}/>
-        <input onClick={()=>{arr.push(array)}} onChange={(e)=>{setArray(e.target.value)}}/>
-        <input onClick={()=>{arr.push(array)}} onChange={(e)=>{setArray(e.target.value)}}/>
-        <input onClick={()=>{arr.push(array)}} onChange={(e)=>{setArray(e.target.value)}}/>
-        <input onClick={()=>{arr.push(array)}} onChange={(e)=>{setArray(e.target.value)}}/>
-        <input onClick={()=>{arr.push(array)}} onChange={(e)=>{setArray(e.target.value)}}/>
-      </div>
-      <button onClick={()=>{arr.push(array); math(arr)}}>입력하기</button>
-
+      <h2>홀짝출력</h2>
+      <input style={{width:'300px',}} placeholder='숫자 10개 입력 띄어쓰기 사용'onChange={(e)=>{setArr(e.target.value)}}/>
+      <button onClick={()=>{math()}}>입력</button>
       <p id='aaa'>
-        홀수 :
+        짝수 :
       </p>
 
       <p id='bbb'>
-        짝수 :
-      </p> */}
-
+        홀수 :
+      </p>
 
       {/* <h2>정렬</h2>
-      <div className='input'>
-        <input onChange={(e)=>{setNumber(e.target.value)}}/>
-        <input onClick={()=>{list.push(number)}} onChange={(e)=>{setNumber(e.target.value)}}/>
-        <input onClick={()=>{list.push(number)}} onChange={(e)=>{setNumber(e.target.value)}}/>
-        <input onClick={()=>{list.push(number)}} onChange={(e)=>{setNumber(e.target.value)}}/>
-        <input onClick={()=>{list.push(number)}} onChange={(e)=>{setNumber(e.target.value)}}/>
-        <input onClick={()=>{list.push(number)}} onChange={(e)=>{setNumber(e.target.value)}}/>
-        <input onClick={()=>{list.push(number)}} onChange={(e)=>{setNumber(e.target.value)}}/>
-        <input onClick={()=>{list.push(number)}} onChange={(e)=>{setNumber(e.target.value)}}/>
-        <input onClick={()=>{list.push(number)}} onChange={(e)=>{setNumber(e.target.value)}}/>
-        <input onClick={()=>{list.push(number)}} onChange={(e)=>{setNumber(e.target.value)}}/>
-      </div>
-      <button onClick={()=>{list.push(number); math(list)}}>입력하기</button>
+      <input style={{width:'300px',}} placeholder='숫자 10개 입력 띄어쓰기 사용'onChange={(e)=>{setArr(e.target.value)}}/>
+      <button onClick={()=>{math()}}>입력</button>
 
       <p id='up'>
         오름차순 :
@@ -136,9 +112,7 @@ function App() {
       <p id='down'>
         내림차순 :
       </p> */}
-
-
-
+     
     </>
   );
 }
