@@ -30,14 +30,14 @@ root.render(
   <React.StrictMode>
     {/* <Library /> */}
     {/* <Clock/> */}
-    <App/>
+    {/* <App/> */}
     {/* <CommentList/> */}
     {/* <Login/> */}
     {/* <Count/> */}
     {/* <EventPractice/> */}
     {/* <Click/> */}
     {/* <ClickClass/> */}
-    {/* <Rock/> */}
+    <Rock/>
   </React.StrictMode>
 );
 
