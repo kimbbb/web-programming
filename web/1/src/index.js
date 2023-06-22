@@ -10,6 +10,7 @@ import Login from './0321/Login';
 import Count from './0323/CounterUse'
 import EventPractice from './0323/EventPractice';
 import Click from './0323/Click';
+import Test from './0321/Test';
 import ClickClass from './0323/ClickClass';
 import Rock from '../src/rock/App.js'
 
@@ -37,7 +38,8 @@ root.render(
     {/* <EventPractice/> */}
     {/* <Click/> */}
     {/* <ClickClass/> */}
-    <Rock/>
+    {/* <Rock/> */}
+    <Test/>
   </React.StrictMode>
 );
 
